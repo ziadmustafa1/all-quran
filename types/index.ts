@@ -19,3 +19,11 @@ export interface Reciter {
   suras?: Sura[];
   moshaf?: Moshaf[];
 }
+
+export interface APIAudioFile {
+  id: number;
+  chapter_id: number;
+  file_size: number;
+  format: string;
+  audio_url: string;
+}

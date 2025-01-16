@@ -1,10 +1,12 @@
+import { APIAudioFile } from '@/types';
+
 export const getRecitationAudio = async (chapterId: number) => {
   try {
     const response = await fetch(`https://api.quran.com/api/v4/chapter_recitations/${chapterId}`);
     const data = await response.json();
     
     if (data.audio_files) {
-      return data.audio_files.map((file: any) => ({
+      return data.audio_files.map((file: APIAudioFile) => ({
         id: file.id,
         chapterId: file.chapter_id,
         audioUrl: file.audio_url,
