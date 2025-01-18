@@ -17,6 +17,7 @@ export function Navbar() {
           </Link>
           <Link href="/adhkar" className="p-2 hover:bg-gray-100 rounded hover:text-[#2d4b2d] text-white"> الأذكار </Link>
           <Link href="/tafseer" className="p-2 hover:bg-gray-100 rounded hover:text-[#2d4b2d] text-white"> تفسير القرآن </Link>
+          <Link href="/hadiths" className="p-2 hover:bg-gray-100 rounded hover:text-[#2d4b2d] text-white"> الحديث </Link>
         </div>
       </div>
     </nav>
